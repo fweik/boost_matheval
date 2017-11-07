@@ -111,10 +111,12 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li class="level1"><a href="#unary_op">Supported unary functions</a></li>
 <li class="level1"><a href="#binary_op">Supported binary functions</a></li>
 <li class="level1"><a href="#constants">Known constants</a></li>
+<li class="level1"><a href="#variables">Variables</a></li>
 </ul>
 </div>
 <div class="textblock"><p>Boost Matheval is a header-only C++11 libary built on top of Boost.Spirit and Boost.Phoenix to parse and evaluate mathematical expressions.</p>
 <p>The interface consists only of the <a class="el" href="namespacematheval.html#ab41b92d69aec0de934a09818029fde0a" title="Convenience function. ">matheval::parse</a> function which skips all whitespace in the input sequence, i.e. <code>x+y</code> is equivalent to <code>x +\ty\n</code>.</p>
+<p>The underlying grammar and the abstract syntax tree can be accessed through the <a class="el" href="namespacematheval_1_1detail.html">matheval::detail</a> namespace, in case the user wants to manipulate the AST or repurpose the grammar.</p>
 <h1><a class="anchor" id="arithmetic"></a>
 Supported arithmetic operations</h1>
 <p>Commonly known arithmetic operations are supported:</p>
@@ -169,18 +171,23 @@ Supported binary functions</h1>
 </ul>
 <h1><a class="anchor" id="constants"></a>
 Known constants</h1>
-<p>Currently only very few constants are defined. This could possibly extended to physical constants in the future.</p>
+<p>Currently only very few constants are defined.</p>
 <ul>
 <li><code>e</code></li>
 <li><code>epsilon</code></li>
-<li><code>pi</code> </li>
+<li><code>pi</code></li>
 </ul>
+<h1><a class="anchor" id="variables"></a>
+Variables</h1>
+<p>Variables are composed of alphanumerical characters (a-z, A-Z, 0-9) and the underscore character <code>_</code>, but always start with a letter. In other words, variables cannot start with a digit or an underscore.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Constants always have higher priority than variables. That is to say, that <div class="fragment"><div class="line"><a class="code" href="namespacematheval.html#ab41b92d69aec0de934a09818029fde0a">matheval::parse</a>(<span class="stringliteral">&quot;e&quot;</span>,{std::make_pair(<span class="stringliteral">&quot;e&quot;</span>, 1)});</div>
+</div><!-- fragment --> will evaluate to <code>2.71828</code> (Euler's number) regardsless. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 7 2017 09:54:45 for Boost Matheval by
+    <li class="footer">Generated on Tue Nov 7 2017 22:01:16 for Boost Matheval by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
