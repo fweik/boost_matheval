@@ -1,6 +1,12 @@
 var NAVTREE =
 [
   [ "Boost Matheval", "index.html", [
+    [ "Short Documentation", "index.html", [
+      [ "Supported arithmetic operations", "index.html#arithmetic", null ],
+      [ "Supported unary functions", "index.html#unary_op", null ],
+      [ "Supported binary functions", "index.html#binary_op", null ],
+      [ "Known constants", "index.html#constants", null ]
+    ] ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [

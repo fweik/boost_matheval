@@ -14,7 +14,8 @@ var indexSectionsWithContent =
   4: "bcegopsu",
   5: "bclortu",
   6: "orst",
-  7: "b"
+  7: "b",
+  8: "s"
 };
 
 var indexSectionNames =
@@ -26,7 +27,8 @@ var indexSectionNames =
   4: "functions",
   5: "variables",
   6: "typedefs",
-  7: "defines"
+  7: "defines",
+  8: "pages"
 };
 
 function convertToId(search)

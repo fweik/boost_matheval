@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('matheval_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -413,182 +413,180 @@ $(document).ready(function(){initNavTree('matheval_8hpp_source.html','');});
 <div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="structmatheval_1_1detail_1_1grammar_1_1constant__.html#a6f826e1e8e377586511d3f1cdc4c705c">  299</a></span>&#160;        <a class="code" href="structmatheval_1_1detail_1_1grammar_1_1constant__.html#a6f826e1e8e377586511d3f1cdc4c705c">constant_</a>()</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        {</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            this-&gt;add</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                (<span class="stringliteral">&quot;digits&quot;</span>,   std::numeric_limits&lt;real_t&gt;::digits    )</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                (<span class="stringliteral">&quot;digits10&quot;</span>, std::numeric_limits&lt;real_t&gt;::digits10  )</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                (<span class="stringliteral">&quot;e&quot;</span> ,       boost::math::constants::e&lt;real_t&gt;()    )</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                (<span class="stringliteral">&quot;epsilon&quot;</span>,  std::numeric_limits&lt;real_t&gt;::epsilon() )</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                (<span class="stringliteral">&quot;pi&quot;</span>,       boost::math::constants::pi&lt;real_t&gt;()   )</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            ;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        }</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    } <a class="code" href="structmatheval_1_1detail_1_1grammar.html#a5dabeca0fb03db1a7b1c4a0c16509e2c">constant</a>;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">    /** @brief symbol table for unary functions like &quot;abs&quot; */</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="structmatheval_1_1detail_1_1grammar_1_1ufunc__.html">  312</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmatheval_1_1detail_1_1grammar_1_1ufunc__.html">ufunc_</a></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        : boost::spirit::qi::symbols&lt;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                typename std::iterator_traits&lt;Iterator&gt;::value_type,</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                typename unary_op&lt;real_t&gt;::op_t</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            &gt;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    {</div>
-<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="structmatheval_1_1detail_1_1grammar_1_1ufunc__.html#a6cc9df0076c4df7e7f287da8368c3535">  318</a></span>&#160;        <a class="code" href="structmatheval_1_1detail_1_1grammar_1_1ufunc__.html#a6cc9df0076c4df7e7f287da8368c3535">ufunc_</a>()</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            this-&gt;add</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                (<span class="stringliteral">&quot;abs&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::abs   ))</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                (<span class="stringliteral">&quot;acos&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::acos  ))</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                (<span class="stringliteral">&quot;acosh&quot;</span> , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::acosh ))</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                (<span class="stringliteral">&quot;asin&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::asin  ))</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                (<span class="stringliteral">&quot;asinh&quot;</span> , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::asinh ))</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                (<span class="stringliteral">&quot;atan&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::atan  ))</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                (<span class="stringliteral">&quot;atanh&quot;</span> , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::atanh ))</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                (<span class="stringliteral">&quot;cbrt&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::cbrt  ))</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                (<span class="stringliteral">&quot;ceil&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::ceil  ))</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                (<span class="stringliteral">&quot;cos&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::cos   ))</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                (<span class="stringliteral">&quot;cosh&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::cosh  ))</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                (<span class="stringliteral">&quot;erf&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::erf   ))</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                (<span class="stringliteral">&quot;erfc&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::erfc  ))</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                (<span class="stringliteral">&quot;exp&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::exp   ))</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                (<span class="stringliteral">&quot;exp2&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::exp2  ))</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                (<span class="stringliteral">&quot;floor&quot;</span> , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::floor ))</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                (<span class="stringliteral">&quot;log&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::log   ))</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                (<span class="stringliteral">&quot;log2&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::log2  ))</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                (<span class="stringliteral">&quot;log10&quot;</span> , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::log10 ))</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                (<span class="stringliteral">&quot;round&quot;</span> , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::round ))</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                (<span class="stringliteral">&quot;sgn&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;<a class="code" href="namespacematheval_1_1detail.html#a51475046455e0845a3ed9926b2e46fd5">sgn</a>        ))</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                (<span class="stringliteral">&quot;sin&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::sin   ))</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                (<span class="stringliteral">&quot;sinh&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::sinh  ))</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                (<span class="stringliteral">&quot;sqrt&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::sqrt  ))</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                (<span class="stringliteral">&quot;tan&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::tan   ))</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                (<span class="stringliteral">&quot;tanh&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::tanh  ))</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                (<span class="stringliteral">&quot;tgamma&quot;</span>, <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::tgamma))</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            ;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        }</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    } <a class="code" href="structmatheval_1_1detail_1_1grammar.html#aeba44ca8bb2b28b8455829b9b3a354ce">ufunc</a>;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment">    /** @brief symbol table for binary functions like &quot;pow&quot; */</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="structmatheval_1_1detail_1_1grammar_1_1bfunc__.html">  353</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmatheval_1_1detail_1_1grammar_1_1bfunc__.html">bfunc_</a></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        : boost::spirit::qi::symbols&lt;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                typename std::iterator_traits&lt;Iterator&gt;::value_type,</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                typename binary_op&lt;real_t&gt;::op_t</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            &gt;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    {</div>
-<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="structmatheval_1_1detail_1_1grammar_1_1bfunc__.html#a42424c68b2173fcd0da0dd1b42d37d9e">  359</a></span>&#160;        <a class="code" href="structmatheval_1_1detail_1_1grammar_1_1bfunc__.html#a42424c68b2173fcd0da0dd1b42d37d9e">bfunc_</a>()</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        {</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            this-&gt;add</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                (<span class="stringliteral">&quot;atan2&quot;</span>, <span class="keyword">static_cast&lt;</span>real_t(*)(real_t,real_t)<span class="keyword">&gt;</span>(&amp;std::atan2))</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                (<span class="stringliteral">&quot;max&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t,real_t)<span class="keyword">&gt;</span>(&amp;std::fmax ))</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                (<span class="stringliteral">&quot;min&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t,real_t)<span class="keyword">&gt;</span>(&amp;std::fmin ))</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                (<span class="stringliteral">&quot;pow&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t,real_t)<span class="keyword">&gt;</span>(&amp;std::pow  ))</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            ;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    } <a class="code" href="structmatheval_1_1detail_1_1grammar.html#a63ad0a57f9ae53fd97ce25041bb7e0d6">bfunc</a>;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">    /** @brief Constructor builds the grammar */</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="structmatheval_1_1detail_1_1grammar.html#a0d829c0b850235acba22f10af056d032">  371</a></span>&#160;    <a class="code" href="structmatheval_1_1detail_1_1grammar.html#a0d829c0b850235acba22f10af056d032">grammar</a>() : <a class="code" href="structmatheval_1_1detail_1_1grammar.html">grammar</a>::base_type(expression)</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    {</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::real_parser;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::real_policies;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        real_parser&lt;real_t,real_policies&lt;real_t&gt;&gt; real;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keyword">using</span> boost::spirit::lexeme;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::_1;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::_2;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::_3;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::_val;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::alpha;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::alnum;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::raw;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        boost::phoenix::function&lt;unary_expr_&lt;real_t&gt;&gt; unary_expr;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        boost::phoenix::function&lt;binary_expr_&lt;real_t&gt;&gt; binary_expr;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keyword">auto</span> fmod = <span class="keyword">static_cast&lt;</span>real_t(*)(real_t,real_t)<span class="keyword">&gt;</span>(&amp;std::fmod);</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keyword">auto</span> pow = <span class="keyword">static_cast&lt;</span>real_t(*)(real_t,real_t)<span class="keyword">&gt;</span>(&amp;std::pow);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        expression =</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            term                   [_val =  _1]</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            &gt;&gt; *(  (<span class="charliteral">&#39;+&#39;</span> &gt;&gt; term    [_val += _1])</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                |  (<span class="charliteral">&#39;-&#39;</span> &gt;&gt; term    [_val -= _1])</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                )</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;            ;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        term =</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            factor                 [_val =  _1]</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;            &gt;&gt; *(  (<span class="charliteral">&#39;*&#39;</span> &gt;&gt; factor  [_val *= _1])</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                |  (<span class="charliteral">&#39;/&#39;</span> &gt;&gt; factor  [_val /= _1])</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;                |  (<span class="charliteral">&#39;%&#39;</span> &gt;&gt; factor  [_val = binary_expr(fmod, _val, _1)])</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;                )</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            ;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        factor =</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            primary                [_val =  _1]</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            &gt;&gt; *(  (<span class="stringliteral">&quot;**&quot;</span> &gt;&gt; factor [_val = binary_expr(pow, _val, _1)])</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;                )</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            ;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        variable =</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;            raw[lexeme[alpha &gt;&gt; *(alnum | <span class="charliteral">&#39;_&#39;</span>)]];</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        primary =</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            real                   [_val =  _1]</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            |   <span class="charliteral">&#39;(&#39;</span> &gt;&gt; expression  [_val =  _1] &gt;&gt; <span class="charliteral">&#39;)&#39;</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            |   (<span class="charliteral">&#39;-&#39;</span> &gt;&gt; primary    [_val = unary_expr(std::negate&lt;real_t&gt;{}, _1)])</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            |   (<span class="charliteral">&#39;+&#39;</span> &gt;&gt; primary    [_val =  _1])</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            |   (<a class="code" href="structmatheval_1_1detail_1_1grammar.html#aeba44ca8bb2b28b8455829b9b3a354ce">ufunc</a> &gt;&gt; <span class="charliteral">&#39;(&#39;</span> &gt;&gt; expression &gt;&gt; <span class="charliteral">&#39;)&#39;</span>)</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                   [_val = unary_expr(_1, _2)]</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            |   (<a class="code" href="structmatheval_1_1detail_1_1grammar.html#a63ad0a57f9ae53fd97ce25041bb7e0d6">bfunc</a> &gt;&gt; <span class="charliteral">&#39;(&#39;</span> &gt;&gt; expression &gt;&gt; <span class="charliteral">&#39;,&#39;</span> &gt;&gt; expression &gt;&gt; <span class="charliteral">&#39;)&#39;</span>)</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                                   [_val = binary_expr(_1, _2, _3)]</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            |   <a class="code" href="structmatheval_1_1detail_1_1grammar.html#a5dabeca0fb03db1a7b1c4a0c16509e2c">constant</a>           [_val =  _1]</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;            |   variable           [_val =  _1]</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;            ;</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    }</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;};</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                (<span class="stringliteral">&quot;e&quot;</span>      , boost::math::constants::e&lt;real_t&gt;()   )</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                (<span class="stringliteral">&quot;epsilon&quot;</span>, std::numeric_limits&lt;real_t&gt;::epsilon())</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                (<span class="stringliteral">&quot;pi&quot;</span>     , boost::math::constants::pi&lt;real_t&gt;()  )</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            ;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    } <a class="code" href="structmatheval_1_1detail_1_1grammar.html#a5dabeca0fb03db1a7b1c4a0c16509e2c">constant</a>;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment">    /** @brief symbol table for unary functions like &quot;abs&quot; */</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="structmatheval_1_1detail_1_1grammar_1_1ufunc__.html">  310</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmatheval_1_1detail_1_1grammar_1_1ufunc__.html">ufunc_</a></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        : boost::spirit::qi::symbols&lt;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                typename std::iterator_traits&lt;Iterator&gt;::value_type,</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                typename unary_op&lt;real_t&gt;::op_t</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            &gt;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    {</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="structmatheval_1_1detail_1_1grammar_1_1ufunc__.html#a6cc9df0076c4df7e7f287da8368c3535">  316</a></span>&#160;        <a class="code" href="structmatheval_1_1detail_1_1grammar_1_1ufunc__.html#a6cc9df0076c4df7e7f287da8368c3535">ufunc_</a>()</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        {</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            this-&gt;add</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                (<span class="stringliteral">&quot;abs&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::abs   ))</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                (<span class="stringliteral">&quot;acos&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::acos  ))</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                (<span class="stringliteral">&quot;acosh&quot;</span> , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::acosh ))</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                (<span class="stringliteral">&quot;asin&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::asin  ))</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                (<span class="stringliteral">&quot;asinh&quot;</span> , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::asinh ))</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                (<span class="stringliteral">&quot;atan&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::atan  ))</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                (<span class="stringliteral">&quot;atanh&quot;</span> , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::atanh ))</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                (<span class="stringliteral">&quot;cbrt&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::cbrt  ))</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                (<span class="stringliteral">&quot;ceil&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::ceil  ))</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                (<span class="stringliteral">&quot;cos&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::cos   ))</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                (<span class="stringliteral">&quot;cosh&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::cosh  ))</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                (<span class="stringliteral">&quot;erf&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::erf   ))</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                (<span class="stringliteral">&quot;erfc&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::erfc  ))</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                (<span class="stringliteral">&quot;exp&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::exp   ))</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                (<span class="stringliteral">&quot;exp2&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::exp2  ))</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                (<span class="stringliteral">&quot;floor&quot;</span> , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::floor ))</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                (<span class="stringliteral">&quot;log&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::log   ))</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                (<span class="stringliteral">&quot;log2&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::log2  ))</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                (<span class="stringliteral">&quot;log10&quot;</span> , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::log10 ))</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                (<span class="stringliteral">&quot;round&quot;</span> , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::round ))</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                (<span class="stringliteral">&quot;sgn&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;<a class="code" href="namespacematheval_1_1detail.html#a51475046455e0845a3ed9926b2e46fd5">sgn</a>        ))</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                (<span class="stringliteral">&quot;sin&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::sin   ))</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                (<span class="stringliteral">&quot;sinh&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::sinh  ))</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                (<span class="stringliteral">&quot;sqrt&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::sqrt  ))</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                (<span class="stringliteral">&quot;tan&quot;</span>   , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::tan   ))</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                (<span class="stringliteral">&quot;tanh&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::tanh  ))</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                (<span class="stringliteral">&quot;tgamma&quot;</span>, <span class="keyword">static_cast&lt;</span>real_t(*)(real_t)<span class="keyword">&gt;</span>(&amp;std::tgamma))</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            ;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        }</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    } <a class="code" href="structmatheval_1_1detail_1_1grammar.html#aeba44ca8bb2b28b8455829b9b3a354ce">ufunc</a>;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment">    /** @brief symbol table for binary functions like &quot;pow&quot; */</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="structmatheval_1_1detail_1_1grammar_1_1bfunc__.html">  351</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structmatheval_1_1detail_1_1grammar_1_1bfunc__.html">bfunc_</a></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        : boost::spirit::qi::symbols&lt;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                typename std::iterator_traits&lt;Iterator&gt;::value_type,</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                typename binary_op&lt;real_t&gt;::op_t</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            &gt;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    {</div>
+<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="structmatheval_1_1detail_1_1grammar_1_1bfunc__.html#a42424c68b2173fcd0da0dd1b42d37d9e">  357</a></span>&#160;        <a class="code" href="structmatheval_1_1detail_1_1grammar_1_1bfunc__.html#a42424c68b2173fcd0da0dd1b42d37d9e">bfunc_</a>()</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            this-&gt;add</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                (<span class="stringliteral">&quot;atan2&quot;</span>, <span class="keyword">static_cast&lt;</span>real_t(*)(real_t,real_t)<span class="keyword">&gt;</span>(&amp;std::atan2))</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                (<span class="stringliteral">&quot;max&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t,real_t)<span class="keyword">&gt;</span>(&amp;std::fmax ))</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                (<span class="stringliteral">&quot;min&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t,real_t)<span class="keyword">&gt;</span>(&amp;std::fmin ))</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                (<span class="stringliteral">&quot;pow&quot;</span>  , <span class="keyword">static_cast&lt;</span>real_t(*)(real_t,real_t)<span class="keyword">&gt;</span>(&amp;std::pow  ))</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            ;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        }</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    } <a class="code" href="structmatheval_1_1detail_1_1grammar.html#a63ad0a57f9ae53fd97ce25041bb7e0d6">bfunc</a>;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="comment">    /** @brief Constructor builds the grammar */</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="structmatheval_1_1detail_1_1grammar.html#a0d829c0b850235acba22f10af056d032">  369</a></span>&#160;    <a class="code" href="structmatheval_1_1detail_1_1grammar.html#a0d829c0b850235acba22f10af056d032">grammar</a>() : <a class="code" href="structmatheval_1_1detail_1_1grammar.html">grammar</a>::base_type(expression)</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::real_parser;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::real_policies;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        real_parser&lt;real_t,real_policies&lt;real_t&gt;&gt; real;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keyword">using</span> boost::spirit::lexeme;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::_1;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::_2;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::_3;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::_val;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::alpha;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::alnum;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <span class="keyword">using</span> boost::spirit::qi::raw;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        boost::phoenix::function&lt;unary_expr_&lt;real_t&gt;&gt; unary_expr;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        boost::phoenix::function&lt;binary_expr_&lt;real_t&gt;&gt; binary_expr;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="keyword">auto</span> fmod = <span class="keyword">static_cast&lt;</span>real_t(*)(real_t,real_t)<span class="keyword">&gt;</span>(&amp;std::fmod);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="keyword">auto</span> pow = <span class="keyword">static_cast&lt;</span>real_t(*)(real_t,real_t)<span class="keyword">&gt;</span>(&amp;std::pow);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        expression =</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;            term                   [_val =  _1]</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            &gt;&gt; *(  (<span class="charliteral">&#39;+&#39;</span> &gt;&gt; term    [_val += _1])</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                |  (<span class="charliteral">&#39;-&#39;</span> &gt;&gt; term    [_val -= _1])</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                )</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            ;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        term =</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            factor                 [_val =  _1]</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            &gt;&gt; *(  (<span class="charliteral">&#39;*&#39;</span> &gt;&gt; factor  [_val *= _1])</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;                |  (<span class="charliteral">&#39;/&#39;</span> &gt;&gt; factor  [_val /= _1])</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                |  (<span class="charliteral">&#39;%&#39;</span> &gt;&gt; factor  [_val = binary_expr(fmod, _val, _1)])</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                )</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            ;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        factor =</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;            primary                [_val =  _1]</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;            &gt;&gt; *(  (<span class="stringliteral">&quot;**&quot;</span> &gt;&gt; factor [_val = binary_expr(pow, _val, _1)])</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;                )</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            ;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        variable =</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            raw[lexeme[alpha &gt;&gt; *(alnum | <span class="charliteral">&#39;_&#39;</span>)]];</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        primary =</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            real                   [_val =  _1]</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;            |   <span class="charliteral">&#39;(&#39;</span> &gt;&gt; expression  [_val =  _1] &gt;&gt; <span class="charliteral">&#39;)&#39;</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;            |   (<span class="charliteral">&#39;-&#39;</span> &gt;&gt; primary    [_val = unary_expr(std::negate&lt;real_t&gt;{}, _1)])</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            |   (<span class="charliteral">&#39;+&#39;</span> &gt;&gt; primary    [_val =  _1])</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            |   (<a class="code" href="structmatheval_1_1detail_1_1grammar.html#aeba44ca8bb2b28b8455829b9b3a354ce">ufunc</a> &gt;&gt; <span class="charliteral">&#39;(&#39;</span> &gt;&gt; expression &gt;&gt; <span class="charliteral">&#39;)&#39;</span>)</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;                                   [_val = unary_expr(_1, _2)]</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            |   (<a class="code" href="structmatheval_1_1detail_1_1grammar.html#a63ad0a57f9ae53fd97ce25041bb7e0d6">bfunc</a> &gt;&gt; <span class="charliteral">&#39;(&#39;</span> &gt;&gt; expression &gt;&gt; <span class="charliteral">&#39;,&#39;</span> &gt;&gt; expression &gt;&gt; <span class="charliteral">&#39;)&#39;</span>)</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;                                   [_val = binary_expr(_1, _2, _3)]</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            |   <a class="code" href="structmatheval_1_1detail_1_1grammar.html#a5dabeca0fb03db1a7b1c4a0c16509e2c">constant</a>           [_val =  _1]</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            |   variable           [_val =  _1]</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            ;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;};</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;} <span class="comment">// namespace detail</span></div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;} <span class="comment">// namespace detail</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="comment">/** @brief Convenience function</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="comment"> * This function builds the grammar, parses the iterator to an AST,</span></div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment"> * evaluates it, and returns the result.</span></div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment"> * @param[in] first iterator to the start of the input sequence</span></div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment"> * @param[in] last  iterator to the end of the input sequence</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="comment"> * @param[in] st    the symbol table for variables</span></div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keyword">template</span> &lt; <span class="keyword">typename</span> real_t, <span class="keyword">typename</span> Iterator &gt;</div>
-<div class="line"><a name="l00444"></a><span class="lineno"><a class="line" href="namespacematheval.html#ab41b92d69aec0de934a09818029fde0a">  444</a></span>&#160;real_t <a class="code" href="namespacematheval.html#ab41b92d69aec0de934a09818029fde0a">parse</a>(Iterator first, Iterator last,</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;             <span class="keyword">typename</span> <a class="code" href="classmatheval_1_1detail_1_1eval__ast.html#aa90e6581cb74d28e52e8e587cf4e6d80">detail::eval_ast&lt;real_t&gt;::symbol_table_t</a> <span class="keyword">const</span> &amp;st)</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;{</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keyword">static</span> <a class="code" href="structmatheval_1_1detail_1_1grammar.html">detail::grammar&lt;real_t,Iterator&gt;</a> <span class="keyword">const</span> g;</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <a class="code" href="structmatheval_1_1detail_1_1expr__ast.html">detail::expr_ast&lt;real_t&gt;</a> ast;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;    <span class="keywordtype">bool</span> r = boost::spirit::qi::phrase_parse(</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        first, last, g,</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        boost::spirit::ascii::space, ast);</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordflow">if</span> (!r || first != last)</div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    {</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        std::string rest(first, last);</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Parsing failed at &quot;</span> + rest);</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    }</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    <a class="code" href="classmatheval_1_1detail_1_1eval__ast.html">detail::eval_ast&lt;real_t&gt;</a> solver(st);</div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    <span class="keywordflow">return</span> solver(ast);</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;}</div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="comment">/** @overload parse(Iterator first, Iterator last, typename detail::eval_ast&lt;real_t&gt;::symbol_table_t const &amp;st) */</span></div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;<span class="keyword">template</span> &lt; <span class="keyword">typename</span> real_t &gt;</div>
-<div class="line"><a name="l00465"></a><span class="lineno"><a class="line" href="namespacematheval.html#adac0d10b22418f3abdd4e662920417d2">  465</a></span>&#160;real_t <a class="code" href="namespacematheval.html#ab41b92d69aec0de934a09818029fde0a">parse</a>(std::string str, <span class="keyword">typename</span> <a class="code" href="classmatheval_1_1detail_1_1eval__ast.html#aa90e6581cb74d28e52e8e587cf4e6d80">detail::eval_ast&lt;real_t&gt;::symbol_table_t</a> <span class="keyword">const</span> &amp;st)</div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;{</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <span class="keywordflow">return</span> parse&lt;real_t&gt;(str.begin(), str.end(), st);</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;}</div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;} <span class="comment">// namespace expression</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;<span class="comment">/** @brief Convenience function</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="comment"> * This function builds the grammar, parses the iterator to an AST,</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="comment"> * evaluates it, and returns the result.</span></div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="comment"> * @param[in] first iterator to the start of the input sequence</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="comment"> * @param[in] last  iterator to the end of the input sequence</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="comment"> * @param[in] st    the symbol table for variables</span></div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="keyword">template</span> &lt; <span class="keyword">typename</span> real_t, <span class="keyword">typename</span> Iterator &gt;</div>
+<div class="line"><a name="l00442"></a><span class="lineno"><a class="line" href="namespacematheval.html#ab41b92d69aec0de934a09818029fde0a">  442</a></span>&#160;real_t <a class="code" href="namespacematheval.html#ab41b92d69aec0de934a09818029fde0a">parse</a>(Iterator first, Iterator last,</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;             <span class="keyword">typename</span> <a class="code" href="classmatheval_1_1detail_1_1eval__ast.html#aa90e6581cb74d28e52e8e587cf4e6d80">detail::eval_ast&lt;real_t&gt;::symbol_table_t</a> <span class="keyword">const</span> &amp;st)</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;{</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    <span class="keyword">static</span> <a class="code" href="structmatheval_1_1detail_1_1grammar.html">detail::grammar&lt;real_t,Iterator&gt;</a> <span class="keyword">const</span> g;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <a class="code" href="structmatheval_1_1detail_1_1expr__ast.html">detail::expr_ast&lt;real_t&gt;</a> ast;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keywordtype">bool</span> r = boost::spirit::qi::phrase_parse(</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        first, last, g,</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        boost::spirit::ascii::space, ast);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordflow">if</span> (!r || first != last)</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    {</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;        std::string rest(first, last);</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Parsing failed at &quot;</span> + rest);</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    }</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <a class="code" href="classmatheval_1_1detail_1_1eval__ast.html">detail::eval_ast&lt;real_t&gt;</a> solver(st);</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;    <span class="keywordflow">return</span> solver(ast);</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;}</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="comment">/** @overload parse(Iterator first, Iterator last, typename detail::eval_ast&lt;real_t&gt;::symbol_table_t const &amp;st) */</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="keyword">template</span> &lt; <span class="keyword">typename</span> real_t &gt;</div>
+<div class="line"><a name="l00463"></a><span class="lineno"><a class="line" href="namespacematheval.html#adac0d10b22418f3abdd4e662920417d2">  463</a></span>&#160;real_t <a class="code" href="namespacematheval.html#ab41b92d69aec0de934a09818029fde0a">parse</a>(std::string str, <span class="keyword">typename</span> <a class="code" href="classmatheval_1_1detail_1_1eval__ast.html#aa90e6581cb74d28e52e8e587cf4e6d80">detail::eval_ast&lt;real_t&gt;::symbol_table_t</a> <span class="keyword">const</span> &amp;st)</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;{</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keywordflow">return</span> parse&lt;real_t&gt;(str.begin(), str.end(), st);</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;}</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;} <span class="comment">// namespace expression</span></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1unary__expr___1_1result_html"><div class="ttname"><a href="structmatheval_1_1detail_1_1unary__expr___1_1result.html">matheval::detail::unary_expr_::result</a></div><div class="ttdoc">Make boost::phoenix::function happy. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00253">matheval.hpp:253</a></div></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1unary__op_html_a4b6323f2fa7154e2ace05fede2437fc8"><div class="ttname"><a href="structmatheval_1_1detail_1_1unary__op.html#a4b6323f2fa7154e2ace05fede2437fc8">matheval::detail::unary_op::op</a></div><div class="ttdeci">op_t op</div><div class="ttdoc">Stored operator. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00129">matheval.hpp:129</a></div></div>
 <div class="ttc" id="classmatheval_1_1detail_1_1eval__ast_html_a0c1aeca2dea1dc994bdae0d47fa3324b"><div class="ttname"><a href="classmatheval_1_1detail_1_1eval__ast.html#a0c1aeca2dea1dc994bdae0d47fa3324b">matheval::detail::eval_ast::result_type</a></div><div class="ttdeci">real_t result_type</div><div class="ttdoc">Necessary typedef for boost::apply_visitor </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00189">matheval.hpp:189</a></div></div>
 <div class="ttc" id="classmatheval_1_1detail_1_1eval__ast_html_aec071ebf50e35d47f62b5242fd6811e5"><div class="ttname"><a href="classmatheval_1_1detail_1_1eval__ast.html#aec071ebf50e35d47f62b5242fd6811e5">matheval::detail::eval_ast::operator()</a></div><div class="ttdeci">result_type operator()(std::string const &amp;c) const </div><div class="ttdoc">Variables evaluate to their value in the symbol table. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00211">matheval.hpp:211</a></div></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1grammar_html_aeba44ca8bb2b28b8455829b9b3a354ce"><div class="ttname"><a href="structmatheval_1_1detail_1_1grammar.html#aeba44ca8bb2b28b8455829b9b3a354ce">matheval::detail::grammar::ufunc</a></div><div class="ttdeci">matheval::detail::grammar::ufunc_ ufunc</div></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1binary__expr___1_1result_html"><div class="ttname"><a href="structmatheval_1_1detail_1_1binary__expr___1_1result.html">matheval::detail::binary_expr_::result</a></div><div class="ttdoc">Make boost::phoenix::function happy. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00266">matheval.hpp:266</a></div></div>
-<div class="ttc" id="structmatheval_1_1detail_1_1grammar_1_1bfunc___html"><div class="ttname"><a href="structmatheval_1_1detail_1_1grammar_1_1bfunc__.html">matheval::detail::grammar::bfunc_</a></div><div class="ttdoc">symbol table for binary functions like &quot;pow&quot; </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00353">matheval.hpp:353</a></div></div>
+<div class="ttc" id="structmatheval_1_1detail_1_1grammar_1_1bfunc___html"><div class="ttname"><a href="structmatheval_1_1detail_1_1grammar_1_1bfunc__.html">matheval::detail::grammar::bfunc_</a></div><div class="ttdoc">symbol table for binary functions like &quot;pow&quot; </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00351">matheval.hpp:351</a></div></div>
 <div class="ttc" id="namespacematheval_1_1detail_html_a51475046455e0845a3ed9926b2e46fd5"><div class="ttname"><a href="namespacematheval_1_1detail.html#a51475046455e0845a3ed9926b2e46fd5">matheval::detail::sgn</a></div><div class="ttdeci">T sgn(T x)</div><div class="ttdoc">Sign function. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00057">matheval.hpp:57</a></div></div>
 <div class="ttc" id="classmatheval_1_1detail_1_1eval__ast_html_a16502532e612915bdb5d538402a9de53"><div class="ttname"><a href="classmatheval_1_1detail_1_1eval__ast.html#a16502532e612915bdb5d538402a9de53">matheval::detail::eval_ast::operator()</a></div><div class="ttdeci">result_type operator()(unary_op&lt; real_t &gt; const &amp;tree) const </div><div class="ttdoc">Evaluate a unary operator and optionally recurse its operand. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00235">matheval.hpp:235</a></div></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1grammar_html_a5dabeca0fb03db1a7b1c4a0c16509e2c"><div class="ttname"><a href="structmatheval_1_1detail_1_1grammar.html#a5dabeca0fb03db1a7b1c4a0c16509e2c">matheval::detail::grammar::constant</a></div><div class="ttdeci">matheval::detail::grammar::constant_ constant</div></div>
@@ -620,27 +618,27 @@ $(document).ready(function(){initNavTree('matheval_8hpp_source.html','');});
 <div class="ttc" id="structmatheval_1_1detail_1_1expr__ast_html_a29ade45cfb8c4e96132457a525d0a6fe"><div class="ttname"><a href="structmatheval_1_1detail_1_1expr__ast.html#a29ade45cfb8c4e96132457a525d0a6fe">matheval::detail::expr_ast::operator-=</a></div><div class="ttdeci">expr_ast &amp; operator-=(expr_ast const &amp;rhs)</div><div class="ttdoc">subtract a tree </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00161">matheval.hpp:161</a></div></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1expr__ast_html_a4c92ae2808672e069bb31008173b9ae7"><div class="ttname"><a href="structmatheval_1_1detail_1_1expr__ast.html#a4c92ae2808672e069bb31008173b9ae7">matheval::detail::expr_ast::operator/=</a></div><div class="ttdeci">expr_ast &amp; operator/=(expr_ast const &amp;rhs)</div><div class="ttdoc">Divide by a tree. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00173">matheval.hpp:173</a></div></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1binary__expr___html_a94eb8e686d699a1ef239881b63a6c1c7"><div class="ttname"><a href="structmatheval_1_1detail_1_1binary__expr__.html#a94eb8e686d699a1ef239881b63a6c1c7">matheval::detail::binary_expr_::operator()</a></div><div class="ttdeci">expr_ast&lt; real_t &gt; operator()(typename binary_op&lt; real_t &gt;::op_t op, expr_ast&lt; real_t &gt; const &amp;lhs, expr_ast&lt; real_t &gt; const &amp;rhs) const </div><div class="ttdoc">Create a new AST containing the binary function. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00269">matheval.hpp:269</a></div></div>
-<div class="ttc" id="namespacematheval_html_ab41b92d69aec0de934a09818029fde0a"><div class="ttname"><a href="namespacematheval.html#ab41b92d69aec0de934a09818029fde0a">matheval::parse</a></div><div class="ttdeci">real_t parse(Iterator first, Iterator last, typename detail::eval_ast&lt; real_t &gt;::symbol_table_t const &amp;st)</div><div class="ttdoc">Convenience function. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00444">matheval.hpp:444</a></div></div>
+<div class="ttc" id="namespacematheval_html_ab41b92d69aec0de934a09818029fde0a"><div class="ttname"><a href="namespacematheval.html#ab41b92d69aec0de934a09818029fde0a">matheval::parse</a></div><div class="ttdeci">real_t parse(Iterator first, Iterator last, typename detail::eval_ast&lt; real_t &gt;::symbol_table_t const &amp;st)</div><div class="ttdoc">Convenience function. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00442">matheval.hpp:442</a></div></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1binary__op_html"><div class="ttname"><a href="structmatheval_1_1detail_1_1binary__op.html">matheval::detail::binary_op</a></div><div class="ttdoc">Store a binary operator and its argument trees. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00062">matheval.hpp:62</a></div></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1unary__op_html_af2ddfd1c7608c743a5ba5bd4dab5c10f"><div class="ttname"><a href="structmatheval_1_1detail_1_1unary__op.html#af2ddfd1c7608c743a5ba5bd4dab5c10f">matheval::detail::unary_op::op_t</a></div><div class="ttdeci">std::function&lt; real_t(real_t)&gt; op_t</div><div class="ttdoc">Signature of a unary operator: op(x) </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00121">matheval.hpp:121</a></div></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1binary__expr___1_1result_html_adb0b77f1795ee746c93aba070a8270ac"><div class="ttname"><a href="structmatheval_1_1detail_1_1binary__expr___1_1result.html#adb0b77f1795ee746c93aba070a8270ac">matheval::detail::binary_expr_::result::type</a></div><div class="ttdeci">T type</div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00266">matheval.hpp:266</a></div></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1unary__expr___1_1result_html_a46056b71a60ac4ee2c63e187402b543e"><div class="ttname"><a href="structmatheval_1_1detail_1_1unary__expr___1_1result.html#a46056b71a60ac4ee2c63e187402b543e">matheval::detail::unary_expr_::result::type</a></div><div class="ttdeci">T type</div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00253">matheval.hpp:253</a></div></div>
 <div class="ttc" id="classmatheval_1_1detail_1_1eval__ast_html_a11e432d53e69df3bdc2d02ebb8ec438a"><div class="ttname"><a href="classmatheval_1_1detail_1_1eval__ast.html#a11e432d53e69df3bdc2d02ebb8ec438a">matheval::detail::eval_ast::eval_ast</a></div><div class="ttdeci">eval_ast(symbol_table_t const &amp;sym)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00198">matheval.hpp:198</a></div></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1binary__op_html_a7df4965a804d263e48fd6f6aa7d7058b"><div class="ttname"><a href="structmatheval_1_1detail_1_1binary__op.html#a7df4965a804d263e48fd6f6aa7d7058b">matheval::detail::binary_op::op</a></div><div class="ttdeci">op_t op</div><div class="ttdoc">Stored operator. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00147">matheval.hpp:147</a></div></div>
-<div class="ttc" id="structmatheval_1_1detail_1_1grammar_1_1bfunc___html_a42424c68b2173fcd0da0dd1b42d37d9e"><div class="ttname"><a href="structmatheval_1_1detail_1_1grammar_1_1bfunc__.html#a42424c68b2173fcd0da0dd1b42d37d9e">matheval::detail::grammar::bfunc_::bfunc_</a></div><div class="ttdeci">bfunc_()</div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00359">matheval.hpp:359</a></div></div>
+<div class="ttc" id="structmatheval_1_1detail_1_1grammar_1_1bfunc___html_a42424c68b2173fcd0da0dd1b42d37d9e"><div class="ttname"><a href="structmatheval_1_1detail_1_1grammar_1_1bfunc__.html#a42424c68b2173fcd0da0dd1b42d37d9e">matheval::detail::grammar::bfunc_::bfunc_</a></div><div class="ttdeci">bfunc_()</div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00357">matheval.hpp:357</a></div></div>
 <div class="ttc" id="classmatheval_1_1detail_1_1eval__ast_html"><div class="ttname"><a href="classmatheval_1_1detail_1_1eval__ast.html">matheval::detail::eval_ast</a></div><div class="ttdoc">Evaluate the Abstract Syntax Tree. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00185">matheval.hpp:185</a></div></div>
 <div class="ttc" id="structmatheval_1_1detail_1_1expr__ast_html_a3336eb50a780314dd41f92fef35f96c6"><div class="ttname"><a href="structmatheval_1_1detail_1_1expr__ast.html#a3336eb50a780314dd41f92fef35f96c6">matheval::detail::expr_ast::expr_ast</a></div><div class="ttdeci">expr_ast()</div><div class="ttdoc">Default constructor. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00097">matheval.hpp:97</a></div></div>
 <div class="ttc" id="classmatheval_1_1detail_1_1eval__ast_html_a1fbc3045ff5a348a036d7f2c68c96404"><div class="ttname"><a href="classmatheval_1_1detail_1_1eval__ast.html#a1fbc3045ff5a348a036d7f2c68c96404">matheval::detail::eval_ast::operator()</a></div><div class="ttdeci">result_type operator()(binary_op&lt; real_t &gt; const &amp;tree) const </div><div class="ttdoc">Evaluate a binary operator and optionally recurse its operands. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00226">matheval.hpp:226</a></div></div>
-<div class="ttc" id="structmatheval_1_1detail_1_1grammar_1_1ufunc___html"><div class="ttname"><a href="structmatheval_1_1detail_1_1grammar_1_1ufunc__.html">matheval::detail::grammar::ufunc_</a></div><div class="ttdoc">symbol table for unary functions like &quot;abs&quot; </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00312">matheval.hpp:312</a></div></div>
-<div class="ttc" id="structmatheval_1_1detail_1_1grammar_1_1ufunc___html_a6cc9df0076c4df7e7f287da8368c3535"><div class="ttname"><a href="structmatheval_1_1detail_1_1grammar_1_1ufunc__.html#a6cc9df0076c4df7e7f287da8368c3535">matheval::detail::grammar::ufunc_::ufunc_</a></div><div class="ttdeci">ufunc_()</div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00318">matheval.hpp:318</a></div></div>
-<div class="ttc" id="structmatheval_1_1detail_1_1grammar_html_a0d829c0b850235acba22f10af056d032"><div class="ttname"><a href="structmatheval_1_1detail_1_1grammar.html#a0d829c0b850235acba22f10af056d032">matheval::detail::grammar::grammar</a></div><div class="ttdeci">grammar()</div><div class="ttdoc">Constructor builds the grammar. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00371">matheval.hpp:371</a></div></div>
+<div class="ttc" id="structmatheval_1_1detail_1_1grammar_1_1ufunc___html"><div class="ttname"><a href="structmatheval_1_1detail_1_1grammar_1_1ufunc__.html">matheval::detail::grammar::ufunc_</a></div><div class="ttdoc">symbol table for unary functions like &quot;abs&quot; </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00310">matheval.hpp:310</a></div></div>
+<div class="ttc" id="structmatheval_1_1detail_1_1grammar_1_1ufunc___html_a6cc9df0076c4df7e7f287da8368c3535"><div class="ttname"><a href="structmatheval_1_1detail_1_1grammar_1_1ufunc__.html#a6cc9df0076c4df7e7f287da8368c3535">matheval::detail::grammar::ufunc_::ufunc_</a></div><div class="ttdeci">ufunc_()</div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00316">matheval.hpp:316</a></div></div>
+<div class="ttc" id="structmatheval_1_1detail_1_1grammar_html_a0d829c0b850235acba22f10af056d032"><div class="ttname"><a href="structmatheval_1_1detail_1_1grammar.html#a0d829c0b850235acba22f10af056d032">matheval::detail::grammar::grammar</a></div><div class="ttdeci">grammar()</div><div class="ttdoc">Constructor builds the grammar. </div><div class="ttdef"><b>Definition:</b> <a href="matheval_8hpp_source.html#l00369">matheval.hpp:369</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="matheval_8hpp.html">matheval.hpp</a></li>
-    <li class="footer">Generated on Tue Nov 7 2017 09:23:59 for Boost Matheval by
+    <li class="footer">Generated on Tue Nov 7 2017 09:46:09 for Boost Matheval by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
