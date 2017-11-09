@@ -110,6 +110,7 @@ $(document).ready(function(){initNavTree('namespacematheval.html','');});
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">matheval Namespace Reference</div>  </div>
@@ -121,15 +122,21 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacematheval_1_1detail"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacematheval_1_1detail.html">detail</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatheval_1_1Parser.html">Parser</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class interface.  <a href="classmatheval_1_1Parser.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ab41b92d69aec0de934a09818029fde0a"><td class="memTemplParams" colspan="2">template&lt;typename real_t , typename Iterator &gt; </td></tr>
 <tr class="memitem:ab41b92d69aec0de934a09818029fde0a"><td class="memTemplItemLeft" align="right" valign="top">real_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacematheval.html#ab41b92d69aec0de934a09818029fde0a">parse</a> (Iterator first, Iterator last, typename <a class="el" href="classmatheval_1_1detail_1_1eval__ast.html">detail::eval_ast</a>&lt; real_t &gt;::symbol_table_t const &amp;st)</td></tr>
 <tr class="memdesc:ab41b92d69aec0de934a09818029fde0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function.  <a href="#ab41b92d69aec0de934a09818029fde0a">More...</a><br/></td></tr>
 <tr class="separator:ab41b92d69aec0de934a09818029fde0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adac0d10b22418f3abdd4e662920417d2"><td class="memTemplParams" colspan="2">template&lt;typename real_t &gt; </td></tr>
-<tr class="memitem:adac0d10b22418f3abdd4e662920417d2"><td class="memTemplItemLeft" align="right" valign="top">real_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacematheval.html#adac0d10b22418f3abdd4e662920417d2">parse</a> (std::string str, typename <a class="el" href="classmatheval_1_1detail_1_1eval__ast.html">detail::eval_ast</a>&lt; real_t &gt;::symbol_table_t const &amp;st)</td></tr>
-<tr class="separator:adac0d10b22418f3abdd4e662920417d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7463ba1ca370bb62bb751a49f872d29"><td class="memTemplParams" colspan="2">template&lt;typename real_t &gt; </td></tr>
+<tr class="memitem:aa7463ba1ca370bb62bb751a49f872d29"><td class="memTemplItemLeft" align="right" valign="top">real_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacematheval.html#aa7463ba1ca370bb62bb751a49f872d29">parse</a> (std::string const &amp;str, typename <a class="el" href="classmatheval_1_1detail_1_1eval__ast.html">detail::eval_ast</a>&lt; real_t &gt;::symbol_table_t const &amp;st)</td></tr>
+<tr class="separator:aa7463ba1ca370bb62bb751a49f872d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ab41b92d69aec0de934a09818029fde0a"></a>
@@ -175,11 +182,13 @@ template&lt;typename real_t , typename Iterator &gt; </div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00442">442</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00498">498</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+
+<p>References <a class="el" href="matheval_8hpp_source.html#l00480">matheval::Parser&lt; real_t &gt;::evaluate()</a>, and <a class="el" href="matheval_8hpp_source.html#l00453">matheval::Parser&lt; real_t &gt;::parse()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="adac0d10b22418f3abdd4e662920417d2"></a>
+<a class="anchor" id="aa7463ba1ca370bb62bb751a49f872d29"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -188,7 +197,7 @@ template&lt;typename real_t &gt; </div>
         <tr>
           <td class="memname">real_t matheval::parse </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>str</em>, </td>
         </tr>
         <tr>
@@ -206,7 +215,7 @@ template&lt;typename real_t &gt; </div>
 </div><div class="memdoc">
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00463">463</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00508">508</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -216,7 +225,7 @@ template&lt;typename real_t &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacematheval.html">matheval</a></li>
-    <li class="footer">Generated on Wed Nov 8 2017 03:09:36 for Boost Matheval by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

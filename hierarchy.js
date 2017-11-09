@@ -8,6 +8,7 @@ var hierarchy =
       [ "matheval::detail::grammar< real_t, Iterator >", "structmatheval_1_1detail_1_1grammar.html", null ]
     ] ],
     [ "matheval::detail::expr_ast< real_t >::nil", "structmatheval_1_1detail_1_1expr__ast_1_1nil.html", null ],
+    [ "matheval::Parser< real_t >", "classmatheval_1_1Parser.html", null ],
     [ "matheval::detail::binary_expr_< real_t >::result< T >", "structmatheval_1_1detail_1_1binary__expr___1_1result.html", null ],
     [ "matheval::detail::unary_expr_< real_t >::result< T >", "structmatheval_1_1detail_1_1unary__expr___1_1result.html", null ],
     [ "symbols", null, [

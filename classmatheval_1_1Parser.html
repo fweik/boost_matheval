@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Boost Matheval: matheval::detail::binary_expr_&lt; real_t &gt; Struct Template Reference</title>
+<title>Boost Matheval: matheval::Parser&lt; real_t &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('structmatheval_1_1detail_1_1binary__expr__.html','');});
+$(document).ready(function(){initNavTree('classmatheval_1_1Parser.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -111,69 +111,59 @@ $(document).ready(function(){initNavTree('structmatheval_1_1detail_1_1binary__ex
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">matheval::detail::binary_expr_&lt; real_t &gt; Struct Template Reference</div>  </div>
+<div class="title">matheval::Parser&lt; real_t &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Binary expression functor.  
- <a href="structmatheval_1_1detail_1_1binary__expr__.html#details">More...</a></p>
+<p>Class interface.  
+ <a href="classmatheval_1_1Parser.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmatheval_1_1detail_1_1binary__expr___1_1result.html">result</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make boost::phoenix::function happy.  <a href="structmatheval_1_1detail_1_1binary__expr___1_1result.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a94eb8e686d699a1ef239881b63a6c1c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmatheval_1_1detail_1_1expr__ast.html">expr_ast</a>&lt; real_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmatheval_1_1detail_1_1binary__expr__.html#a94eb8e686d699a1ef239881b63a6c1c7">operator()</a> (typename <a class="el" href="structmatheval_1_1detail_1_1binary__op.html">binary_op</a>&lt; real_t &gt;::op_t op, <a class="el" href="structmatheval_1_1detail_1_1expr__ast.html">expr_ast</a>&lt; real_t &gt; const &amp;lhs, <a class="el" href="structmatheval_1_1detail_1_1expr__ast.html">expr_ast</a>&lt; real_t &gt; const &amp;rhs) const </td></tr>
-<tr class="memdesc:a94eb8e686d699a1ef239881b63a6c1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new AST containing the binary function.  <a href="#a94eb8e686d699a1ef239881b63a6c1c7">More...</a><br/></td></tr>
-<tr class="separator:a94eb8e686d699a1ef239881b63a6c1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae84097449060c15a72381c037a877f25"><td class="memTemplParams" colspan="2">template&lt;typename Iterator &gt; </td></tr>
+<tr class="memitem:ae84097449060c15a72381c037a877f25"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classmatheval_1_1Parser.html#ae84097449060c15a72381c037a877f25">parse</a> (Iterator first, Iterator last)</td></tr>
+<tr class="memdesc:ae84097449060c15a72381c037a877f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an expression.  <a href="#ae84097449060c15a72381c037a877f25">More...</a><br/></td></tr>
+<tr class="separator:ae84097449060c15a72381c037a877f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab00ad2a7a4e55df558ae33fe4809d6bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatheval_1_1Parser.html#ab00ad2a7a4e55df558ae33fe4809d6bc">parse</a> (std::string const &amp;str)</td></tr>
+<tr class="separator:ab00ad2a7a4e55df558ae33fe4809d6bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2723cd38bf419bca7618726802fb79c"><td class="memItemLeft" align="right" valign="top">real_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatheval_1_1Parser.html#ac2723cd38bf419bca7618726802fb79c">evaluate</a> (typename <a class="el" href="classmatheval_1_1detail_1_1eval__ast.html">detail::eval_ast</a>&lt; real_t &gt;::symbol_table_t const &amp;st)</td></tr>
+<tr class="memdesc:ac2723cd38bf419bca7618726802fb79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the AST with a given symbol table.  <a href="#ac2723cd38bf419bca7618726802fb79c">More...</a><br/></td></tr>
+<tr class="separator:ac2723cd38bf419bca7618726802fb79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename real_t&gt;<br/>
-struct matheval::detail::binary_expr_&lt; real_t &gt;</h3>
+class matheval::Parser&lt; real_t &gt;</h3>
 
-<p>Binary expression functor. </p>
+<p>Class interface. </p>
+<p>This class hides the grammar, AST, and AST traversal behind some member functions.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">real_t</td><td>datatype of the result </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00264">264</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00440">440</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a94eb8e686d699a1ef239881b63a6c1c7"></a>
+<a class="anchor" id="ac2723cd38bf419bca7618726802fb79c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename real_t &gt; </div>
+template&lt;typename real_t&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structmatheval_1_1detail_1_1expr__ast.html">expr_ast</a>&lt;real_t&gt; <a class="el" href="structmatheval_1_1detail_1_1binary__expr__.html">matheval::detail::binary_expr_</a>&lt; real_t &gt;::operator() </td>
+          <td class="memname">real_t <a class="el" href="classmatheval_1_1Parser.html">matheval::Parser</a>&lt; real_t &gt;::evaluate </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="structmatheval_1_1detail_1_1binary__op.html">binary_op</a>&lt; real_t &gt;::op_t&#160;</td>
-          <td class="paramname"><em>op</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">typename <a class="el" href="classmatheval_1_1detail_1_1eval__ast.html">detail::eval_ast</a>&lt; real_t &gt;::symbol_table_t const &amp;&#160;</td>
+          <td class="paramname"><em>st</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structmatheval_1_1detail_1_1expr__ast.html">expr_ast</a>&lt; real_t &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>lhs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structmatheval_1_1detail_1_1expr__ast.html">expr_ast</a>&lt; real_t &gt; const &amp;&#160;</td>
-          <td class="paramname"><em>rhs</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -183,13 +173,104 @@ template&lt;typename real_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Create a new AST containing the binary function. </p>
+<p>Evaluate the AST with a given symbol table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">st</td><td>the symbol table for variables </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00269">269</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00480">480</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="matheval_8hpp_source.html#l00498">matheval::parse()</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a class="anchor" id="ae84097449060c15a72381c037a877f25"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename real_t&gt; </div>
+<div class="memtemplate">
+template&lt;typename Iterator &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmatheval_1_1Parser.html">matheval::Parser</a>&lt; real_t &gt;::parse </td>
+          <td>(</td>
+          <td class="paramtype">Iterator&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Iterator&#160;</td>
+          <td class="paramname"><em>last</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse an expression. </p>
+<p>This function builds the grammar and parses the iterator into an AST.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">first</td><td>iterator to the start of the input sequence </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">last</td><td>iterator to the end of the input sequence </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00453">453</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="matheval_8hpp_source.html#l00471">matheval::Parser&lt; real_t &gt;::parse()</a>, and <a class="el" href="matheval_8hpp_source.html#l00498">matheval::parse()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab00ad2a7a4e55df558ae33fe4809d6bc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename real_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classmatheval_1_1Parser.html">matheval::Parser</a>&lt; real_t &gt;::parse </td>
+          <td>(</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00471">471</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+
+<p>References <a class="el" href="matheval_8hpp_source.html#l00453">matheval::Parser&lt; real_t &gt;::parse()</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/travis/build/hmenke/boost_matheval/include/<a class="el" href="matheval_8hpp_source.html">matheval.hpp</a></li>
 </ul>
 </div><!-- contents -->
@@ -197,7 +278,7 @@ template&lt;typename real_t &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacematheval.html">matheval</a></li><li class="navelem"><a class="el" href="namespacematheval_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structmatheval_1_1detail_1_1binary__expr__.html">binary_expr_</a></li>
+    <li class="navelem"><a class="el" href="namespacematheval.html">matheval</a></li><li class="navelem"><a class="el" href="classmatheval_1_1Parser.html">Parser</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
