@@ -128,13 +128,13 @@ Public Types</h2></td></tr>
 <tr class="memitem:a0c1aeca2dea1dc994bdae0d47fa3324b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#a0c1aeca2dea1dc994bdae0d47fa3324b">result_type</a> = real_t</td></tr>
 <tr class="memdesc:a0c1aeca2dea1dc994bdae0d47fa3324b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Necessary typedef for <code>boost::apply_visitor</code>  <a href="#a0c1aeca2dea1dc994bdae0d47fa3324b">More...</a><br/></td></tr>
 <tr class="separator:a0c1aeca2dea1dc994bdae0d47fa3324b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9867d183668ec40b3f7d8d0c2c984eb4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#a9867d183668ec40b3f7d8d0c2c984eb4">symbol_table_t</a> = std::unordered_map&lt; std::string, <a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#a0c1aeca2dea1dc994bdae0d47fa3324b">result_type</a> &gt;</td></tr>
-<tr class="memdesc:a9867d183668ec40b3f7d8d0c2c984eb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the symbol table.  <a href="#a9867d183668ec40b3f7d8d0c2c984eb4">More...</a><br/></td></tr>
-<tr class="separator:a9867d183668ec40b3f7d8d0c2c984eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90e6581cb74d28e52e8e587cf4e6d80"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#aa90e6581cb74d28e52e8e587cf4e6d80">symbol_table_t</a> = std::map&lt; std::string, <a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#a0c1aeca2dea1dc994bdae0d47fa3324b">result_type</a> &gt;</td></tr>
+<tr class="memdesc:aa90e6581cb74d28e52e8e587cf4e6d80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the symbol table.  <a href="#aa90e6581cb74d28e52e8e587cf4e6d80">More...</a><br/></td></tr>
+<tr class="separator:aa90e6581cb74d28e52e8e587cf4e6d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11e432d53e69df3bdc2d02ebb8ec438a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#a11e432d53e69df3bdc2d02ebb8ec438a">eval_ast</a> (<a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#a9867d183668ec40b3f7d8d0c2c984eb4">symbol_table_t</a> const &amp;sym)</td></tr>
+<tr class="memitem:a11e432d53e69df3bdc2d02ebb8ec438a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#a11e432d53e69df3bdc2d02ebb8ec438a">eval_ast</a> (<a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#aa90e6581cb74d28e52e8e587cf4e6d80">symbol_table_t</a> const &amp;sym)</td></tr>
 <tr class="memdesc:a11e432d53e69df3bdc2d02ebb8ec438a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a11e432d53e69df3bdc2d02ebb8ec438a">More...</a><br/></td></tr>
 <tr class="separator:a11e432d53e69df3bdc2d02ebb8ec438a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec10ba254e34d29e26e355342df198bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#a0c1aeca2dea1dc994bdae0d47fa3324b">result_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#aec10ba254e34d29e26e355342df198bd">operator()</a> (qi::info::nil) const </td></tr>
@@ -183,14 +183,14 @@ template&lt;typename real_t&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9867d183668ec40b3f7d8d0c2c984eb4"></a>
+<a class="anchor" id="aa90e6581cb74d28e52e8e587cf4e6d80"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename real_t&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classmatheval_1_1detail_1_1eval__ast.html">matheval::detail::eval_ast</a>&lt; real_t &gt;::<a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#a9867d183668ec40b3f7d8d0c2c984eb4">symbol_table_t</a> =  std::unordered_map&lt;std::string, <a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#a0c1aeca2dea1dc994bdae0d47fa3324b">result_type</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classmatheval_1_1detail_1_1eval__ast.html">matheval::detail::eval_ast</a>&lt; real_t &gt;::<a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#aa90e6581cb74d28e52e8e587cf4e6d80">symbol_table_t</a> =  std::map&lt;std::string, <a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#a0c1aeca2dea1dc994bdae0d47fa3324b">result_type</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -214,7 +214,7 @@ template&lt;typename real_t&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classmatheval_1_1detail_1_1eval__ast.html">matheval::detail::eval_ast</a>&lt; real_t &gt;::<a class="el" href="classmatheval_1_1detail_1_1eval__ast.html">eval_ast</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#a9867d183668ec40b3f7d8d0c2c984eb4">symbol_table_t</a> const &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classmatheval_1_1detail_1_1eval__ast.html#aa90e6581cb74d28e52e8e587cf4e6d80">symbol_table_t</a> const &amp;&#160;</td>
           <td class="paramname"><em>sym</em></td><td>)</td>
           <td></td>
         </tr>
