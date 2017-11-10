@@ -16,6 +16,7 @@ var matheval_8hpp =
     [ "ufunc_", "structmatheval_1_1detail_1_1grammar_1_1ufunc__.html", "structmatheval_1_1detail_1_1grammar_1_1ufunc__" ],
     [ "bfunc_", "structmatheval_1_1detail_1_1grammar_1_1bfunc__.html", "structmatheval_1_1detail_1_1grammar_1_1bfunc__" ],
     [ "Parser", "classmatheval_1_1Parser.html", "classmatheval_1_1Parser" ],
+    [ "BOOST_RESULT_OF_USE_DECLTYPE", "matheval_8hpp.html#a0dc2f703002ecfcb8306c51c1103e4a5", null ],
     [ "BOOST_SPIRIT_USE_PHOENIX_V3", "matheval_8hpp.html#a6afb52446a381990649ed6b2cb61d918", null ],
     [ "parse", "matheval_8hpp.html#ab41b92d69aec0de934a09818029fde0a", null ],
     [ "parse", "matheval_8hpp.html#aa7463ba1ca370bb62bb751a49f872d29", null ],

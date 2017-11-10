@@ -163,7 +163,7 @@ class matheval::detail::eval_ast&lt; real_t &gt;</h3>
 <p>Evaluate the Abstract Syntax Tree. </p>
 <p>This visits all the variants of the AST and applies the stored operators. </p>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00185">185</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00186">186</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a0c1aeca2dea1dc994bdae0d47fa3324b"></a>
 <div class="memitem">
@@ -179,7 +179,7 @@ template&lt;typename real_t&gt; </div>
 
 <p>Necessary typedef for <code>boost::apply_visitor</code> </p>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00189">189</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00190">190</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -197,7 +197,7 @@ template&lt;typename real_t&gt; </div>
 
 <p>Type of the symbol table. </p>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00192">192</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00193">193</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -229,7 +229,7 @@ template&lt;typename real_t&gt; </div>
 <p>Constructor. </p>
 <p>Saves the symbol table to apply variables. </p>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00198">198</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00199">199</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -260,7 +260,7 @@ template&lt;typename real_t&gt; </div>
 
 <p>Empty nodes in the tree evaluate to 0 (probably shouldn't happen) </p>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00204">204</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00205">205</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +290,7 @@ template&lt;typename real_t&gt; </div>
 
 <p>Numbers evaluate to themselves. </p>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00208">208</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00209">209</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -320,7 +320,7 @@ template&lt;typename real_t&gt; </div>
 
 <p>Variables evaluate to their value in the symbol table. </p>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00211">211</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00212">212</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
@@ -350,9 +350,9 @@ template&lt;typename real_t&gt; </div>
 
 <p>Recursively evaluate the AST. </p>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00220">220</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00221">221</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
-<p>References <a class="el" href="matheval_8hpp_source.html#l00090">matheval::detail::expr_ast&lt; real_t &gt;::tree</a>.</p>
+<p>References <a class="el" href="matheval_8hpp_source.html#l00091">matheval::detail::expr_ast&lt; real_t &gt;::tree</a>.</p>
 
 </div>
 </div>
@@ -382,9 +382,9 @@ template&lt;typename real_t&gt; </div>
 
 <p>Evaluate a binary operator and optionally recurse its operands. </p>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00226">226</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00227">227</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
-<p>References <a class="el" href="matheval_8hpp_source.html#l00149">matheval::detail::binary_op&lt; real_t &gt;::lhs</a>, <a class="el" href="matheval_8hpp_source.html#l00147">matheval::detail::binary_op&lt; real_t &gt;::op</a>, and <a class="el" href="matheval_8hpp_source.html#l00151">matheval::detail::binary_op&lt; real_t &gt;::rhs</a>.</p>
+<p>References <a class="el" href="matheval_8hpp_source.html#l00150">matheval::detail::binary_op&lt; real_t &gt;::lhs</a>, <a class="el" href="matheval_8hpp_source.html#l00148">matheval::detail::binary_op&lt; real_t &gt;::op</a>, and <a class="el" href="matheval_8hpp_source.html#l00152">matheval::detail::binary_op&lt; real_t &gt;::rhs</a>.</p>
 
 </div>
 </div>
@@ -414,7 +414,7 @@ template&lt;typename real_t&gt; </div>
 
 <p>Evaluate a unary operator and optionally recurse its operand. </p>
 
-<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00235">235</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
+<p>Definition at line <a class="el" href="matheval_8hpp_source.html#l00236">236</a> of file <a class="el" href="matheval_8hpp_source.html">matheval.hpp</a>.</p>
 
 </div>
 </div>
