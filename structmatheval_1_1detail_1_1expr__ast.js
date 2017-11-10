@@ -1,6 +1,5 @@
 var structmatheval_1_1detail_1_1expr__ast =
 [
-    [ "nil", "structmatheval_1_1detail_1_1expr__ast_1_1nil.html", null ],
     [ "tree_t", "structmatheval_1_1detail_1_1expr__ast.html#a070a8fbbe01e12bbe37a41634fa96489", null ],
     [ "expr_ast", "structmatheval_1_1detail_1_1expr__ast.html#a3336eb50a780314dd41f92fef35f96c6", null ],
     [ "expr_ast", "structmatheval_1_1detail_1_1expr__ast.html#a3047e77be351676ff0324fb520e97443", null ],

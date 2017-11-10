@@ -2,8 +2,8 @@ var matheval_8hpp =
 [
     [ "unary_op", "structmatheval_1_1detail_1_1unary__op.html", "structmatheval_1_1detail_1_1unary__op" ],
     [ "binary_op", "structmatheval_1_1detail_1_1binary__op.html", "structmatheval_1_1detail_1_1binary__op" ],
+    [ "nil", "structmatheval_1_1detail_1_1nil.html", null ],
     [ "expr_ast", "structmatheval_1_1detail_1_1expr__ast.html", "structmatheval_1_1detail_1_1expr__ast" ],
-    [ "nil", "structmatheval_1_1detail_1_1expr__ast_1_1nil.html", null ],
     [ "unary_op", "structmatheval_1_1detail_1_1unary__op.html", "structmatheval_1_1detail_1_1unary__op" ],
     [ "binary_op", "structmatheval_1_1detail_1_1binary__op.html", "structmatheval_1_1detail_1_1binary__op" ],
     [ "eval_ast", "classmatheval_1_1detail_1_1eval__ast.html", "classmatheval_1_1detail_1_1eval__ast" ],
